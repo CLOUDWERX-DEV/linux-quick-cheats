@@ -56,9 +56,7 @@ chmod +x ~/bin/cheats
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
-Here's the uninstall section in a single code block:
 
-```markdown
 ## Uninstallation
 
 Quick-Cheats can be uninstalled either automatically using the provided script or manually.

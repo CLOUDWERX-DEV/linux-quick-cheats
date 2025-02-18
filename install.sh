@@ -173,9 +173,12 @@ if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
     
     # Add color customization
     echo 'export CHEATS_HIGHLIGHT_COLOR="1;32"' >> ~/.bashrc
-    
-    source ~/.bashrc
+        
 fi
+
+# Source bashrc to apply changes
+print_info "Source bashrc to apply changes..."
+echo source ~/.bashrc
 
 # Final success message
 print_success "

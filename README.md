@@ -56,6 +56,47 @@ chmod +x ~/bin/cheats
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+Here's the uninstall section in a single code block:
+
+```markdown
+## Uninstallation
+
+Quick-Cheats can be uninstalled either automatically using the provided script or manually.
+
+### Automatic Uninstall
+```
+./uninstall.sh
+```
+
+### Manual Uninstall
+```
+# Remove the executable
+rm ~/bin/cheats
+
+# Remove cheatsheet files
+rm ~/.cheatsheet.txt
+rm -rf ~/.cheatsheets
+
+# Remove from .bashrc (edit file and remove these lines):
+# export PATH="$HOME/bin:$PATH"
+# alias cheat="cheats"
+# alias cht="cheats"
+# export CHEATS_HIGHLIGHT_COLOR="1;32"
+
+# Optional: Remove bin directory if empty
+rmdir ~/bin 2>/dev/null
+
+# Reload shell configuration
+source ~/.bashrc
+```
+
+To verify uninstallation:
+```
+which cheats              # Should return nothing
+ls ~/.cheatsheet.txt     # Should show "No such file"
+echo $CHEATS_HIGHLIGHT_COLOR  # Should return nothing
+```
+
 
 ## Command Reference
 

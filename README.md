@@ -44,6 +44,7 @@ chmod +x install.sh
 ```
 
 ### Option 2: Manual Installation
+```
 # Create directories
 mkdir -p ~/bin ~/.cheatsheets
 
